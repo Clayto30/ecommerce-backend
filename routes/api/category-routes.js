@@ -8,9 +8,7 @@ router.get('/', (req, res) => {
   Category.findAll({
     // be sure to include its associated Products
     include: [
-      {
-        model: Product
-      }
+      Product
     ]
   })
     .then(dbCategoryData => res.json(dbCategoryData))
@@ -24,13 +22,11 @@ router.get('/:id', (req, res) => {
   // find one category by its `id` value
   Category.findOne({
     where: {
-      id: res.params.id
+      id: req.params.id
     },
     // be sure to include its associated Products
     include: [
-      {
-        model: Product
-      }
+      Product
     ]
   })
     .then(dbCategoryData => res.json(dbCategoryData))
@@ -94,7 +90,7 @@ router.delete('/:id', (req, res) => {
     .catch(err => {
       console.log(err);
       res.status(500).json(err);
-      });
+    });
 });
 
 module.exports = router;
