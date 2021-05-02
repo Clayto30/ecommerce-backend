@@ -2,19 +2,15 @@
 
 ## Description 
 
-Your GitHub profile is an extremely important aspect of your public identity as a developer. A well-crafted one allows you to show off your work to other developers as well as potential employers. An important component of your GitHub profile—and one that many new developers often overlook—is the README.md file.
+This app is the back-end of an e-commerce website.
 
-The quality of a README often differentiates a good project from a bad project. A good one takes advantage of the opportunity to explain and showcase what your application does, justify the technologies used, and even talk about some of the challenges you faced and features you hope to implement in the future. A good README helps you stand out among the large crowd of developers putting their work on GitHub.
+For the techies: Using Sequelize to sync with the database, we can make API calls to perfrom CRUD routes on the products, categories, and tags.
 
-There's no one right way to structure a good README. There is one very wrong way, however, and that is to not include a README at all or to create a very anemic one. This guide outlines a few best practices. As you progress in your career, you will develop your own ideas about what makes a good README.
-
-At a minimum, your project README needs a title and a short description explaining the what, why, and how. What was your motivation? Why did you build this project? (Note: The answer is not "Because it was a homework assignment.") What problem does it solve? What did you learn? What makes your project stand out?
-
-Lastly, if your project is deployed, include a link to the deployed application here.
+For everyone else: You're asking me, "CRUD routes? Sequelize? What are they talking about? I just want to see if this merchant sells shorts!?!" Well, that's exactly what we're talking about! That is category 1! :) Thanks to this back-end, we can pull that information up for you and let you know that "Yes, we do have shorts!" and answer further questions you might have about the price, color, or what have you. This data linking could also be used to present similar products to a customer who is browsing.
 
 [My E-Commerce Back End GitHub Repository](https://github.com/Clayto30/ecommerce-backend).
 
-If you need an example of a good README, check out [the VSCode repository](https://github.com/microsoft/vscode).
+Here is [Screencastify Walktrhough Video](https://github.com/microsoft/vscode) that demonstrates the technical acceptance criteria being met.
 
 ## Table of Contents (Optional)
 
@@ -27,13 +23,13 @@ If your README is very long, add a table of contents to make it easy for users t
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+After cloning the repository, run npm install so that you have all the dependencies, which include Mysql2, Sequlize, Express, and Dotenv. You'll need to create a dotenv file of your own with your mysql password and username in order to run this.
+
+After that, use the command line to input "npm run seed" and "npm start." Use an interface like Postman or Insomnia Core to test these API routes.
 
 ## Usage 
 
-Provide instructions and examples for use. Include screenshots as needed.
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+Use an API call to find all the products! After that, use "Post" to create a product! Take the id number and "Put" to update the name of that product if you like! Then why not "Delete" it using that id number, too? This works on Category, Product, and Tag endpoints. 
 
 ![alt text](assets/images/screenshot.jpg)
 
