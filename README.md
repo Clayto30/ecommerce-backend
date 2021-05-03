@@ -10,7 +10,7 @@ For everyone else: You're asking me, "CRUD routes? Sequelize? What are they talk
 
 [My E-Commerce Back End GitHub Repository](https://github.com/Clayto30/ecommerce-backend).
 
-Here is [Screencastify Walktrhough Video](https://drive.google.com/file/d/1MbGHrQ0JlQGzeZcG1bIR9l8Gd8fYCqOV/view) that demonstrates the technical acceptance criteria being met.
+Here is [Screencastify Walkthrough Video](https://drive.google.com/file/d/1MbGHrQ0JlQGzeZcG1bIR9l8Gd8fYCqOV/view) that demonstrates the technical acceptance criteria being met.
 
 ## Table of Contents (Optional)
 
